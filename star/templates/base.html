@@ -12,25 +12,23 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <a class="navbar-brand" href="{% url 'home' %}">
-        <img WIDTH="50" height="50" src="{% static 'img/saunaa.jpg' %}">
+        <img width="50" height="50" src="{% static 'img/saunaa.jpg' %}">
     </a>
     <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-            aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
         <div class="collapse navbar-collapse"id="navbarCollapse">
             {% if user.is_authenticated %}
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">{{ user.username }}</a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labeledby="userMenu">
-                                        <a class="dropdown-item" href="{% url 'password_change' %}">Изменить пароль</a>
-                                    <div class="dropdown-divider"></div>
+                        <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.username }}</a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labeledby="userMenu">
+                                <a class="dropdown-item" href="{% url 'password_change' %}">Изменить пароль</a>
+                                <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="{% url 'logout' %}">Выйти</a>
                                 </div>
                             </li>
@@ -43,21 +41,40 @@
             {% endif %}
         </div>
     </nav>
-<div class = 'container'>
-        {% block content %}
-        {% endblock %}
-</div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+<div class="bg-image view" style="background-image: url({% static 'img/sa.jpg' %}); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+            <h1 class="h1-responsive font-weight-bold mt-sm-5">Make purchases with our app </h1>
+            <hr class="hr-light">
+            <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt
+            dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
+            iste.</h6>
+            <a class="btn btn-white">Download</a>
+            <a class="btn btn-outline-white">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <footer>
+      <a href="{% include 'footer.html' %}"></a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <footer>
-      <a href="{% include "footer.html" %}</a>
-    </footer>
+
 </body>
 </html>
