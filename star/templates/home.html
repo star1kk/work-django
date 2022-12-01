@@ -1,19 +1,71 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
+{% load static %}
 
 {% block content %}
   <div class="container">
+    <div class="row align-items-start" >
+      <div class="col"  style="margin-top: 10%">
     <h1 class="display-4">Сеть саун "Блаженство"</h1>
     <p class="lead">Сауна с русской парной, турецким хамамом и финской баней.</p>
     <p class="lead">
       {% if user.is_authenticated %}
-      <a class="btn btn-primary btn-lg" href="{% url 'add' %} " role="button">Забронировать сауну</a>
+      <a class="btn btn-warning btn-lg" style="background: #f09819; background: -webkit-linear-gradient(0deg, #f09819 0%, #edde5d 100%); background: linear-gradient(0deg, #f09819 0%, #edde5d 100%);" href="{% url 'add' %} " role="button">Забронировать сауну</a>
       {% else %}
       <a class="btn btn-primary btn-lg" href="http://127.0.0.1:8000/users/login/" role="button">Забронировать сауну</a>
       {% endif %}
     </p>
   </div>
+    </div>
+  </div>
 
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 10%;">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in to
+          additional content. This card has even longer content than the first to show
+          that equal height action.
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
 
   <a href="{% include 'carousel.html' %}"></a>
-{% endblock %}
