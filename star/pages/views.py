@@ -10,5 +10,13 @@ class AddPageView(TemplateView):
     template_name = 'form.html'
 
 
-def AddPageView(request):
-    return render(request, "form.html")
+class Sauna1PageView(TemplateView):
+    template_name = 'saunaPage/sauna1.html'
+
+
+class Sauna2PageView(TemplateView):
+    template_name = 'saunaPage/sauna2.html'
+
+
+class Sauna3PageView(TemplateView):
+    template_name = 'saunaPage/sauna3.html'

@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="mudak">
+    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/star/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/pages/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/pages/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/carousel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/templates/line.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/templates/registration/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/registration/password_change_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/templates/registration/password_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/registration/password_change_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +49,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="S:\star\star\templates\saunaPage" />
       <recent name="S:\star\star\static\img" />
       <recent name="S:\star\star\templates\article" />
       <recent name="S:\star\star\templates" />
       <recent name="S:\star\star\templates\registration" />
-      <recent name="S:\star\star\static" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -102,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669797176442</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cards">
+      <created>1669883088155</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669883088155</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +126,7 @@
     <MESSAGE value="pro" />
     <MESSAGE value="puk" />
     <MESSAGE value="mudak" />
-    <option name="LAST_COMMIT_MESSAGE" value="mudak" />
+    <MESSAGE value="cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="cards" />
   </component>
 </project>

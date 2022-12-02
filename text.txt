@@ -174,34 +174,37 @@
 
 
 {% block content %}
-<form method="post">
-    <section class="vh-100 gradient-custom">
-        <div class="container py-5 h-100 " >
-            <div class="row d-flex h-100 col d-flex justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6 col-xl-5" >
-                    <div class="card bg-glass text-black  "
-                         style="border-radius: 1rem;background: rgba(255,255,255,0.2);
-                                                   -webkit-backdrop-filter: blur(10px);
-                                                    backdrop-filter: blur(10px);
-                                                    border: 1px solid rgba(255,255,255,0.1);">
-                        <div class="card-body p-5 text-center" >
-                            <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                            <p class="text-white-50 mb-5">Please enter your login and password!</p>
-                            <div class="form-outline form-white mb-4">
-                                {% csrf_token %}
-                                {{ form.as_p }}
-                                <div class="form-outline form-white mb-4">
-                                    <button type="submit" class="btn btn-outline-dark btn-lg px-5">Login</button>
+<div class="row align-items-start" >
+    <div class="col"  style="margin-top: 15%">
+        <form class="" method="post">
+            <section class="vh-100 gradient-custom">
+                <div class="container py-5 h-100 " >
+                    <div class="row d-flex h-100 col d-flex justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6 col-xl-5" >
+                            <div class="card bg-glass text-black  "
+                                 style="border-radius: 1rem;background: rgba(255,255,255,0.2);
+                                                           -webkit-backdrop-filter: blur(10px);
+                                                            backdrop-filter: blur(10px);
+                                                            border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="card-body p-5 text-center" >
+                                    <h2 class="fw-bold mb-2 text-uppercase">Вход</h2>
+                                    <p class="text-white-50 mb-5">Please enter your login and password!</p>
+                                    <div class="form-outline form-white mb-4">
+                                        {% csrf_token %}
+                                        {{ form.as_p }}
+                                        <div class="form-outline form-white mb-4">
+                                            <button type="submit" class="btn btn-outline-dark btn-lg px-5">Login</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-</form
+            </section>
+        </form>
+    </div>
+</div>
 {% endblock %}
 
 
