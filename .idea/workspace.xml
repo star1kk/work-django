@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="cards">
+    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="4to">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/star/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/pages/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/pages/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/templates/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669883088155</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="4to">
+      <created>1669968697094</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669968697094</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +133,7 @@
     <MESSAGE value="puk" />
     <MESSAGE value="mudak" />
     <MESSAGE value="cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="cards" />
+    <MESSAGE value="4to" />
+    <option name="LAST_COMMIT_MESSAGE" value="4to" />
   </component>
 </project>

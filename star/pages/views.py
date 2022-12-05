@@ -10,13 +10,13 @@ class AddPageView(TemplateView):
     template_name = 'form.html'
 
 
-class Sauna1PageView(TemplateView):
+class SaunaOnePageView(TemplateView):
     template_name = 'saunaPage/sauna1.html'
 
 
-class Sauna2PageView(TemplateView):
+class SaunaTwoPageView(TemplateView):
     template_name = 'saunaPage/sauna2.html'
 
 
-class Sauna3PageView(TemplateView):
+class SaunaThreePageView(TemplateView):
     template_name = 'saunaPage/sauna3.html'
