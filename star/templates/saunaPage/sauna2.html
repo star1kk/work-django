@@ -251,16 +251,20 @@ footer {
                                                             backdrop-filter: blur(10px);
                                                             border: 1px solid rgba(255,255,255,0.1);">
                     <div class="card-body p-5 text-center">
-                        <p class="text-white-50 mb-5">Оздоровительный центр «Клин» на улице Софьи Ковалевской предлагает услуги финской, русской и джакузи, в которых имеются бассейны разных размеров с чистейшей водой, массажные кресла, уютные комнаты отдыха, караоке и другие развлечения для приятного времяпрепровождения. Сауна ждет гостей круглосуточно, в любой день недели.</p>
-                        <ul>
+                        <p class="text-white-50 mb-5" style="text-align:left;">Оздоровительный центр «Клин» на улице Софьи Ковалевской предлагает услуги финской, русской и джакузи, в которых имеются бассейны разных размеров с чистейшей водой, массажные кресла, уютные комнаты отдыха, караоке и другие развлечения для приятного времяпрепровождения. Сауна ждет гостей круглосуточно, в любой день недели.</p>
+                        <ul style="text-align:left;">
                             <li>Парная: русская, финская, джакузи</li>
                             <li>Для отдыха: комнаты отдыха, караоке, бассейн</li>
                         </ul>
-                        <div class="form-outline form-white mb-4">
-                            <div class="form-outline form-white mb-4">
-                                <button type="submit" class="btn btn-outline-dark btn-lg px-5">Вход</button>
-                            </div>
-                        </div>
+                            <p class="lead">
+                                {% if user.is_authenticated %}
+                                    <a class="btn btn-light btn-lg" style="background: #eeeeee;
+                            background: -webkit-radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);
+                            background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'add' %} " role="button">Забронировать сауну</a>
+                                {% else %}
+                                    <a class="btn btn-warning btn-lg" style="background: #f09819; background: -webkit-linear-gradient(0deg, #f09819 0%, #edde5d 100%); background: linear-gradient(0deg, #f09819 0%, #edde5d 100%);" href="http://127.0.0.1:8000/users/login/" role="button">Забронировать сауну</a>
+                                {% endif %}
+                            </p>
                     </div>
                 </div>
             </div>
