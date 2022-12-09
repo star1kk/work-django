@@ -45,8 +45,8 @@
   padding: 5px;
   margin: 0 20px 20px 0;
   background-color: white;
-  height: 300px;
-  width: 250px;
+  height: 269px;
+  width: 400px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -webkit-animation-name: miniCard;
@@ -66,6 +66,18 @@
   50% {
     transform: scale(1.05);
   }
+
+  .miniCard {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .miniCard img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .miniCard img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: rgba(255,255,255,0.1);
@@ -104,16 +116,30 @@
     </nav>
 <div class="bg-image" style="background-image: url({% static 'img/sa.jpg' %}); height: 1330px; background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <div class="mainCardContent">
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
-        <div class="miniCard"></div>
+        <div class="miniCard" style="margin-top:10%;">
+            <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
     </div>
 </div>
     <div class = 'container'>

@@ -10,81 +10,165 @@
 
 <body>
 <style>
-
-
+.navbar-brand a {
+    display: inline-block;
+    color: #00bfff; /* Цвет обычной ссылки */
+    line-height: 1.8;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+.navbar-brand a:after {
+    background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.navbar-brand a:hover:after,
+.navbar-brand a:focus:after {
+    width: 100%;
+}
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to left, #44a08d, #093637);
+}
+.bgTop {
+    z-index: -13;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: -14;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: -15;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
 html {
-	background: #000000;
-	width: 100%;
+  position: relative;
+  min-height: 100%;
 }
-.container {
-	padding-bottom: 3rem;
+body {
+  margin-bottom: 60px;
 }
-img {
-	-webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
-	-webkit-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
 }
-.container img:hover {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
-}
-.last {
-	margin-top: 6.5rem;
-}
-.featured_wrapper {
-	position: relative;
-}
-.featured_wrapper img {
-	width: 100%;
-	width: 100%;
-	height: 100vh;
-	-o-object-fit: cover;
-	object-fit: cover;
-	-o-object-position: top;
-	object-position: top;
-}
-.title_wrapper {
-	position: absolute;
-	width: 100%;
-	left: 2rem;
-	bottom: 2rem;
-	padding: 20px 40px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.title_wrapper h1 {
-	width: 70%;
-}
-button {
-	background: #f40612 !important;
-	color: #fff !important;
-	font-size: 18px;
-	padding: 0.5rem 3rem;
-	outline: none;
-	border: 0 !important;
-}
-@media (max-width: 768px) {
-	.title_wrapper {
-		text-align: center;
-		left: 0;
-	}
-	.title_wrapper h1 {
-		font-size: 32px !important;
-		width: 100%;
-	}
-	.container {
-		padding: 20px;
-	}
-}
-@media (max-width: 480px) {
-	.column.is-one-quarter img {
-		width: 100%;
-		margin-bottom: 7rem;
-	}
+  * {
+  box-sizing: border-box;
 }
 
+@-webkit-keyframes mainCard {
+  0% {
+    transform: scale(0);
+  }
+}
+
+@keyframes mainCard {
+  0% {
+    transform: scale(0);
+  }
+}
+
+@keyframes mainCardHeader {
+  0% {
+    transform: scaleY(0);
+  }
+}
+.mainCardContent {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  height: 100%;
+  width: 90%;
+}
+
+.miniCard {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 20px 20px 0;
+  background-color: white;
+  height: 269px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-animation-name: miniCard;
+          animation-name: miniCard;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes miniCard {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: rgba(255,255,255,0.1);
                                                                               -webkit-backdrop-filter: blur(5px);
@@ -94,7 +178,7 @@ button {
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-     <div class="collapse navbar-collapse" id="navbarCollapse">
+         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-brand ml-auto mr-auto" style="position: absolute; left: 40%; ">
                 <a class="navbar-brand" href="{% url 'saunaOne' %}" style="font-size: 16px" <strong>Первая сауна</strong></a>
                 <a class="navbar-brand" href="{% url 'saunaTwo' %}" style="font-size: 16px" <strong>Вторая сауна</strong></a>
@@ -115,47 +199,73 @@ button {
             {% else %}
             <form class="form-inline ml-auto">
                 <a href = "{% url 'login' %}" class="btn btn-outline-light">Вход</a>
-                <a href = "{% url 'signup' %}" class="btn btn-dark ml-2" style="">Регистрация</a>
+                <a href = "{% url 'signup' %}" class="btn btn-outline-light ml-2">Регистрация</a>
             </form>
             {% endif %}
         </div>
     </nav>
 
 
-
-<!-- #CodePenChallenge: Reflections -->
-<div class="top">
-	<div class="columns">
-		<div class="column is-full featured_wrapper p-0">
-			<img src="{% static 'img/sa.jpg' %}" class="featured">
-			<div class="title_wrapper">
-				<span class="has-text-white">Trending Today</span>
-				<h1 class="title is-1 has-text-white">The Untold Story of the great Lorem Ipsum</h1>
-				<button class="button is-medium">Watch It Now</button>
-			</div>
-		</div>
-	</div>
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+  </div>
 </div>
-<div class="container">
-	<div class="columns is-multiline p-0 pt-6 last">
-		<div class="column is-full">
-			<p class="has-text-white">Action Movies Collection</p>
-		</div>
-		<div class="column is-one-quarter">
-			<img src="https://raw.githubusercontent.com/brixiobodino/coffeholic/main/image1.PNG">
-		</div>
-		<div class="column is-one-quarter">
-			<img src="https://raw.githubusercontent.com/brixiobodino/coffeholic/main/image2.PNG">
-		</div>
-		<div class="column is-one-quarter">
-			<img src="https://raw.githubusercontent.com/brixiobodino/coffeholic/main/img3.PNG">
-		</div>
-		<div class="column is-one-quarter">
-			<img src="https://raw.githubusercontent.com/brixiobodino/coffeholic/main/img4.PNG">
-		</div>
-	</div>
-</div>
-
+    <div class="mainCardContent">
+        <div class="miniCard" style="margin-top:10%;">
+            <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+        <div class="miniCard">
+             <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
+        </div>
+    </div>
+        <form method="post">
+            <div class="container py-5 h-100">
+                <div class="card bg-glass text-black  "
+                     style="border-radius: 1rem;background: rgba(255,255,255,0.2);
+                                                           -webkit-backdrop-filter: blur(10px);
+                                                            backdrop-filter: blur(10px);
+                                                            border: 1px solid rgba(255,255,255,0.1);">
+                    <div class="card-body p-5 text-center">
+                        <p class="text-white-50 mb-5">Оздоровительный центр «Клин» на улице Софьи Ковалевской предлагает услуги финской, русской и джакузи, в которых имеются бассейны разных размеров с чистейшей водой, массажные кресла, уютные комнаты отдыха, караоке и другие развлечения для приятного времяпрепровождения. Сауна ждет гостей круглосуточно, в любой день недели.</p>
+                        <ul>
+                            <li>Парная: русская, финская, джакузи</li>
+                            <li>Для отдыха: комнаты отдыха, караоке, бассейн</li>
+                        </ul>
+                        <div class="form-outline form-white mb-4">
+                            <div class="form-outline form-white mb-4">
+                                <button type="submit" class="btn btn-outline-dark btn-lg px-5">Вход</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
     <footer>
       <a href="{% include 'footer.html' %}"></a>
     </footer>
@@ -170,3 +280,4 @@ button {
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
+</html>
