@@ -4,43 +4,35 @@
 </head>
 <body>
 
-{% block content %}
-    <div id="carousel" class="carousel slide" data-bs-ride="false">
+<style>
+    .carousel{
+        width: 30%;
+        height: 20%;
+    }
+</style>
+    <div id="carousel" class="carousel slide" data-bs-ride="false" style="margin-top: 10%; margin-left: 10%">
         <div class="carousel-inner">
-            <div class="carousel-item active" style="margin-top: 30%;">
-                <img class="d-block w-100" src="{% static 'img/rus.jpg' %}" alt="...">
-                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Метка первого слайда</h5>
-                    <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
-                 </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static 'img/rus.jpg' %}">
             </div>
-            <div class="carousel-item" style="margin-top:30%;">
-                <img class="d-block w-100" src="{% static 'img/turk.jpg' %}" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Метка первого слайда</h5>
-                    <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
-                </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/turk.jpg' %}">
             </div>
-            <div class="carousel-item" style="margin-top: 30%;">
-                <img class="d-block w-100" src="{% static 'img/finsk.jpg' %}" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Метка первого слайда</h5>
-                    <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
-                </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/finsk.jpg' %}">
             </div>
         </div>
         <!-- Элементы управления -->
-        <a class="carousel-control-prev" style="margin-top: 30%;" href="#carousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Предыдущий</span>
         </a>
-            <a class="carousel-control-next" style="margin-top: 30%;" href="#carousel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Следующий</span>
             </a>
         </div>
     </div>
-{% endblock %}
 
 </body>
 </html>
