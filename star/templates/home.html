@@ -16,6 +16,9 @@
    .card img:hover {
     transform: scale(1.2); /* Увеличиваем масштаб */
    }
+   .card-img-top{
+    height:55%
+   }
   </style>
 
   <div class="container">
@@ -40,7 +43,7 @@ background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'ad
   <div class="col">
     <div class="card h-100">
       <a href="{% url 'saunaOne' %}">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"  class="card-img-top" alt=""/></a>
+        <img src="{% static 'img/rus.jpg' %}"  class="card-img-top" alt=""/></a>
           <div class="card-body">
             <h5 class="card-title">First sauna</h5>
             <p class="card-text">
@@ -55,7 +58,7 @@ background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'ad
   <div class="col">
     <div class="card h-100">
       <a href="{% url 'saunaTwo' %}">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt=""/></a>
+        <img src="{% static 'img/turk.jpg' %}" class="card-img-top" alt=""/></a>
       <div class="card-body">
         <h5 class="card-title">Two sauna</h5>
         <p class="card-text">
@@ -69,7 +72,7 @@ background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'ad
   <div class="col">
     <div class="card h-100">
       <a href="{% url 'saunaThree' %}">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt=""/></a>
+        <img src="{% static 'img/finsk.jpg' %}" class="card-img-top" alt=""/></a>
       <div class="card-body">
         <h5 class="card-title">Three sauna</h5>
         <p class="card-text">
