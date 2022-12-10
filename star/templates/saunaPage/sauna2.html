@@ -57,7 +57,7 @@
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to left, #44a08d, #093637);
+    background-image: linear-gradient(to top, #44a08d, #093637);
 }
 .bgTop {
     z-index: -13;
@@ -251,11 +251,26 @@ footer {
                                                             backdrop-filter: blur(10px);
                                                             border: 1px solid rgba(255,255,255,0.1);">
                     <div class="card-body p-5 text-center">
-                        <p class="text-white-50 mb-5" style="text-align:left;">Оздоровительный центр «Клин» на улице Софьи Ковалевской предлагает услуги финской, русской и джакузи, в которых имеются бассейны разных размеров с чистейшей водой, массажные кресла, уютные комнаты отдыха, караоке и другие развлечения для приятного времяпрепровождения. Сауна ждет гостей круглосуточно, в любой день недели.</p>
-                        <ul style="text-align:left;">
-                            <li>Парная: русская, финская, джакузи</li>
-                            <li>Для отдыха: комнаты отдыха, караоке, бассейн</li>
-                        </ul>
+                        <p class="text-white-50 mb-5" style="text-align:left; font-size: 20px;">Оздоровительный центр «Клин» на улице Софьи Ковалевской предлагает услуги финской, русской и джакузи, в которых имеются бассейны разных размеров с чистейшей водой, массажные кресла, уютные комнаты отдыха, караоке и другие развлечения для приятного времяпрепровождения. Сауна ждет гостей круглосуточно, в любой день недели.</p>
+                        <div class="content" style="text-align:left; font-size: 20px;">
+                            <div class="title"><div class="price" style="color: whitesmoke"><h3>1200 Р. в час</h3></div>
+										<div class="text"><p>Круглосуточно, стоимость указана для компании до 6-ти человек. Дети до 7 лет бесплатно.</p>
+<p>Доплата за каждого последующего гостя 200 руб./час.</p>
+<ul>
+<li>Тапки — 100 руб / пара</li>
+<li>Простынь — 100 руб</li>
+<li>Полотенце — 150 руб</li>
+<li>Халат — 300 руб</li>
+<li>Русская сауна с вениками</li>
+<li>Гостиная,2 комнаты отдыха</li>
+<li>Русский бильярд</li>
+<li>Караоке, аудио-видео аппаратура</li>
+<li>Парковка</li>
+</ul>
+</div>
+
+									</div>
+                        </div>
                             <p class="lead">
                                 {% if user.is_authenticated %}
                                     <a class="btn btn-light btn-lg" style="background: #eeeeee;
@@ -264,6 +279,7 @@ footer {
                                 {% else %}
                                     <a class="btn btn-warning btn-lg" style="background: #f09819; background: -webkit-linear-gradient(0deg, #f09819 0%, #edde5d 100%); background: linear-gradient(0deg, #f09819 0%, #edde5d 100%);" href="http://127.0.0.1:8000/users/login/" role="button">Забронировать сауну</a>
                                 {% endif %}
+                                <button type="button" class="btn btn-outline-dark btn-lg px-4">+ 7 (343) 467-86-00</button>
                             </p>
                     </div>
                 </div>
