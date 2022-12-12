@@ -8,25 +8,25 @@ from . import models
 
 class ArticleListView(LoginRequiredMixin, ListView):
     model = models.Article
-    template_name = 'article_list.html'
+    template_name = 'article/article_list.html'
 
 class ArticleDetailView(LoginRequiredMixin, DetailView):
     model = models.Article
-    template_name = 'article_detail.html'
+    template_name = 'article/article_detail.html'
 
 class ArticleUpdateView(LoginRequiredMixin, UpdateView):
     model = models.Article
     fields = ['title', 'body', ]
-    template_name = 'article_edit.html'
+    template_name = 'article/article_edit.html'
 
 class ArticleDeleteView(LoginRequiredMixin, DeleteView):
     model = models.Article
-    template_name = 'article_delete.html'
-    success_url = reverse_lazy('article_list')
+    template_name = 'article/article_delete.html'
+    success_url = reverse_lazy('article/article_list')
 
 class ArticleCreateView(LoginRequiredMixin, CreateView):
     model = models.Article
-    template_name = 'article_new.html'
+    template_name = 'article/article_new'
     fields = ['title', 'body']
     login_url = 'login'
 

@@ -30,7 +30,7 @@
       {% if user.is_authenticated %}
       <a class="btn btn-light btn-lg" style="background: #eeeeee;
 background: -webkit-radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);
-background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'add' %} " role="button">Забронировать сауну</a>
+background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'article_list' %} " role="button">Забронировать сауну</a>
       {% else %}
       <a class="btn btn-warning btn-lg" style="background: #f09819; background: -webkit-linear-gradient(0deg, #f09819 0%, #edde5d 100%); background: linear-gradient(0deg, #f09819 0%, #edde5d 100%);" href="http://127.0.0.1:8000/users/login/" role="button">Забронировать сауну</a>
       {% endif %}
