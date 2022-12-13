@@ -6,23 +6,28 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 from . import models
 
+
 class ArticleListView(LoginRequiredMixin, ListView):
     model = models.Article
     template_name = 'article/article_list.html'
 
+
 class ArticleDetailView(LoginRequiredMixin, DetailView):
     model = models.Article
     template_name = 'article/article_detail.html'
+
 
 class ArticleUpdateView(LoginRequiredMixin, UpdateView):
     model = models.Article
     fields = ['title', 'body', ]
     template_name = 'article/article_edit.html'
 
+
 class ArticleDeleteView(LoginRequiredMixin, DeleteView):
     model = models.Article
     template_name = 'article/article_delete.html'
     success_url = reverse_lazy('article/article_list')
+
 
 class ArticleCreateView(LoginRequiredMixin, CreateView):
     model = models.Article

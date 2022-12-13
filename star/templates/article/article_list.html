@@ -4,7 +4,7 @@
 {% block content %}
 {% for article in object_list %}
 <div class="col">
-<div class="card" style="margin-top:15%;">
+<div class="card">
     <div class="card-header">
         <span class="font-weight-bold">{{ article.title }}</span> &middot;
         <span class="text-muted">by {{ article.author }} | {{ article.date }}</span>
@@ -20,18 +20,3 @@
     </div>
 {% endfor %}
 {% endblock content %}
-
-  <div class="col">
-    <div class="card h-100">
-      <a href="{% url 'saunaTwo' %}">
-        <img src="{% static 'img/turk.jpg' %}" class="card-img-top" alt=""/></a>
-      <div class="card-body">
-        <h5 class="card-title">Two sauna</h5>
-        <p class="card-text">
-          Prosto texttt.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
