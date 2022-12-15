@@ -109,6 +109,8 @@ footer {
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.username }}</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labeledby="userMenu">
+                                <a class="dropdown-item" href="{% url 'edit_user' user.pk %}">Изменить данные о себе</a>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{% url 'password_change' %}">Изменить пароль</a>
                                 <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="{% url 'logout' %}">Выйти</a>

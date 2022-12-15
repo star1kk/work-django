@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}edit_user{% endblock %}
+{% block content %}
+<div class="row align-items-start" >
+    <div class="col"  style="margin-top: 10%">
+        <form method="post">
+            <section class="vh-100 gradient-custom">
+                <div class="container py-5 h-100 " >
+                    <div class="row d-flex h-100 col d-flex justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6 col-xl-5" >
+                            <div class="card bg-glass text-black  "
+                                 style="border-radius: 1rem;background: rgba(255,255,255,0.2);
+                                                           -webkit-backdrop-filter: blur(10px);
+                                                            backdrop-filter: blur(10px);
+                                                            border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="card-body p-5 text-center" >
+                                    <h2 class="fw-bold mb-2 text-uppercase">Изменить данные о себе</h2>
+                                    <div class="form-outline form-white mb-4">
+                                         <form action="" method="post">
+                                           {% csrf_token %}
+                                           {{ form.as_p }}
+                                        <div class="form-outline form-white mb-4">
+                                            <button type="submit" class="btn btn-outline-dark btn-lg px-5">Изменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+</div>
+{% endblock %}
