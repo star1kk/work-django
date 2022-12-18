@@ -4,18 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="4to">
-      <change afterPath="$PROJECT_DIR$/star/templates/edit_user.html" afterDir="false" />
+    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="edit_user">
+      <change afterPath="$PROJECT_DIR$/star/blog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/blog/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/booking/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/booking/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/booking/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/sauna/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/blog/blog_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/blog/blog_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/blog/blog_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/blog/blog_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/blog/blog_new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/booking/booking_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/booking/booking_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/booking/booking_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/booking/booking_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/booking/booking_new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/booking/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/booking/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/booking/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/booking/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/booking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/booking/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/star/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/star/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/star/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/star/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/star/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/date.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +92,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mespy/PycharmProjects/work-django/star/templates/appointments&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mespy\PycharmProjects\work-django\star\templates\appointments" />
+      <recent name="C:\Users\mespy\PycharmProjects\work-django\star\templates\master" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mespy\PycharmProjects\work-django\star\templates\blog" />
+      <recent name="C:\Users\mespy\PycharmProjects\work-django\star\templates" />
       <recent name="C:\Users\mespy\PycharmProjects\work-django\star\static\img" />
       <recent name="S:\star\star\static\img" />
       <recent name="S:\star\star\templates\article" />
-      <recent name="S:\star\star\templates" />
-      <recent name="S:\star\star\templates\registration" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,7 +129,18 @@
       <workItem from="1670858104377" duration="6924000" />
       <workItem from="1670951702091" duration="5186000" />
       <workItem from="1670966594452" duration="179000" />
-      <workItem from="1671105042833" duration="6027000" />
+      <workItem from="1671105042833" duration="6434000" />
+      <workItem from="1671111623698" duration="870000" />
+      <workItem from="1671162930154" duration="24000" />
+      <workItem from="1671277747541" duration="1544000" />
+      <workItem from="1671281942952" duration="749000" />
+      <workItem from="1671283421857" duration="4178000" />
+      <workItem from="1671294383668" duration="45000" />
+      <workItem from="1671294474374" duration="102000" />
+      <workItem from="1671294592531" duration="14465000" />
+      <workItem from="1671356396916" duration="12204000" />
+      <workItem from="1671374832373" duration="1264000" />
+      <workItem from="1671376120512" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="yesss">
       <created>1669354134259</created>
@@ -137,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670966733125</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="edit_user">
+      <created>1671111317871</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671111317871</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,12 +216,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="yesss" />
     <MESSAGE value="pro" />
     <MESSAGE value="puk" />
     <MESSAGE value="strani4ki" />
     <MESSAGE value="izmenenie" />
     <MESSAGE value="4to" />
-    <option name="LAST_COMMIT_MESSAGE" value="4to" />
+    <MESSAGE value="edit_user" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit_user" />
   </component>
 </project>

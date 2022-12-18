@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'pages',
     'crispy_forms',
     'articles',
+    'blog',
+    'sauna',
+    'booking',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +61,7 @@ ROOT_URLCONF = 'star.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates', 'templates/sauna', 'templates/blog', 'templates/booking'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

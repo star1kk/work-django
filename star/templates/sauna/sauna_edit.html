@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  {% extends 'base.html' %}
+    {% block content %}
+<div class="row align-items-start" >
+    <div class="col"  style="margin-top: 5%">
+        <form method="post">
+            <section class="vh-100 gradient-custom">
+                <div class="container py-5 h-100 " >
+                    <div class="row d-flex h-100 col d-flex justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6 col-xl-5" >
+                            <div class="card bg-glass text-black  "
+                                 style="border-radius: 1rem;background: rgba(255,255,255,0.2);
+                                                           -webkit-backdrop-filter: blur(10px);
+                                                            backdrop-filter: blur(10px);
+                                                            border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="card-body p-5 text-center" >
+
+      <h1>Редактировать стрижку</h1>
+      <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Обновить"/>
+      </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+</div>
+    {% endblock content %}
+        </form>
+    </div>
+  </div>
+</body>
+</html>
