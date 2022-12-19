@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Удалить зал</title>
 </head>
 <body>
     {% extends 'base.html' %}
         {% block content %}
     <div class="row align-items-start" >
-    <div class="col"  style="margin-top: 7%">
+    <div class="col"  style="margin-top: 10%">
         <form method="post">
-        <h1>Удалить парикмахера</h1>
+        <h1>Удалить зал</h1>
         <form action="" method="post">
             {% csrf_token %}
-            <p>Вы точно хотите удалить парикмахера "{{ sauna.description}}?</p>
+            <h4>Уверены что хотите удалить зал "{{ sauna.description}}?</h4>
+            <p></p>
             <input type="submit" value="Удалить" class="btn btn-danger"/>
         </form>
     {% endblock content %}

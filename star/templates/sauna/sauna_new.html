@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Новый мастер</title>
+  <title>Новый зал</title>
 </head>
 <body>
   {% extends 'base.html' %}
@@ -22,7 +22,7 @@
                                 <div class="card-body p-5 text-center" >
                                     <div class="form-outline form-white mb-4">
       {% if user.is_superuser %}
-        <h1>Новый мастер</h1>
+        <h1>Новый зал</h1>
         <form action="" method="post">
           {% csrf_token %}
           {{ form.as_p }}

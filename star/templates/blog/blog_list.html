@@ -2,45 +2,27 @@
 {% block title %}loh{% endblock %}
 {% block content %}
 <div class="row align-items-start" >
-    <div class="col">
+    <div class="col" style="margin-top: 10%">
         <form method="post">
-            <section class="vh-100 gradient-custom">
-                <div class="container py-5 h-100 " >
-                    <div class="row d-flex h-100 col d-flex justify-content-center">
-                        <div class="col-12 col-md-8 col-lg-6 col-xl-5" >
-                            <div class="card bg-glass text-black  "
-                                 style="border-radius: 1rem;background: rgba(255,255,255,0.2);
+            <div class="jumbotron" style="border-radius: 1rem;background: rgba(255,255,255,0.2);
                                                            -webkit-backdrop-filter: blur(10px);
                                                             backdrop-filter: blur(10px);
                                                             border: 1px solid rgba(255,255,255,0.1);">
-                                <div class="card-body p-5 text-center" >
-                                    <div class="form-outline form-white mb-4">
-                                         <form action="" method="post">
-            {% if user.is_superuser %}
-                <p class="navbar-brand">Панель администратора</p>
-                <a class="btn btn-success" href="{% url 'blog_new' %}">Добавить</a>
-            {% endif %}
-
             <h1 class="display-4 text-center m-4">Блог компании</h1>
             {% for blog in object_list %}
                     <h1 class="display-4 m-4">{{ blog.title }}</h1>
                     <p class="lead m-4">{{ blog.description }}</p>
-                                             <p class="lead m-4">{{ blog.article }}</p>
+                <p class="lead m-4">{{ blog.article }}</p>
 
                     {% if user.is_superuser %}
                         <p>
                         <p class="navbar-brand">Панель администратора</p>
-                        <a class="btn btn-primary" href="{% url 'blog_edit' blog.pk %}">Отредактировать</a>
+                        <a class="btn btn-primary" href="{% url 'blog_edit' blog.pk %}">Редактировать</a>
+                        <a class="btn btn-success" href="{% url 'blog_new' %}">Добавить</a>
                         <a class="btn btn-danger" href="{% url 'blog_delete' blog.pk %}">Удалить</a>
                     {% endif %}
             {% endfor %}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </form>
     </div>
 </div>

@@ -8,6 +8,9 @@
 {% extends 'base.html' %}
     {% block content %}
         {% if user.is_superuser %}
+    <div class="row align-items-start" >
+    <div class="col"  style="margin-top: 10%">
+        <form method="post">
             <h1>Удалить статью</h1>
                 <form action="" method="post">
                     {% csrf_token %}

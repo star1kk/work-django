@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Список заказов</title>
+    <title>Список броней</title>
 </head>
 <body>
     {% extends 'base.html' %}
@@ -11,17 +11,21 @@
     <div class="col"  style="margin-top: 7%">
         <form method="post">
 
-            <h1 class="display-4 text-center m-4">Список заказов</h1>
+            <h1 class="display-4 text-center m-4" style="color: darkgrey">Список броней</h1>
             {% for booking in object_list %}
                 {% if booking.user.pk == user.pk or user.is_superuser %}
-                    <div class="jumbotron">
-                        <h5>Мастер - <a href="{% url 'sauna_detail' booking.sauna.pk %}">{{ booking.sauna }}</a></h5>
-                        <h5>Заказчик - {{ booking.user.first_name }} {{ booking.user.last_name }}</h5>
-                        <h5>Время записи - {{ booking.entry_date }} {{ booking.entry_time }}</h5>
+                    <div class="jumbotron" style="border-radius: 1rem;background: rgba(255,255,255,0.2);
+                                                           -webkit-backdrop-filter: blur(10px);
+                                                            backdrop-filter: blur(10px);
+                                                            border: 1px solid rgba(255,255,255,0.1);">
+                        <h5>Зал - <a href="{% url 'sauna_detail' booking.sauna.pk %}">{{ booking.sauna }}</a></h5>
+                        <h5>Клиент - {{ booking.user.first_name }} {{ booking.user.last_name }}</h5>
+                        <h5>Время брони - {{ booking.entry_date }} {{ booking.entry_time }}</h5>
+                        <h5>Количество человек: {{ booking.quantity }}</h5>
 
-                        <a href="{% url 'booking_detail' booking.pk %}" class="btn btn-primary">Перейти</a>
-                        <a href="{% url 'booking_edit' booking.pk %}" class="btn btn-warning">Изменить</a>
-                        <a href="{% url 'booking_delete' booking.pk %}" class="btn btn-danger">Удалить</a>
+                        <a href="{% url 'booking_detail' booking.pk %}" class="btn btn-dark">Перейти</a>
+                        <a href="{% url 'booking_edit' booking.pk %}" class="btn btn-dark">Изменить</a>
+                        <a href="{% url 'booking_delete' booking.pk %}" class="btn btn-dark">Удалить</a>
                     </div>
                 {% endif %}
             {% endfor %}

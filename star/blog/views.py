@@ -5,7 +5,7 @@ from .models import Article
 from .forms import NewArticle
 
 active_fields = [
-    'title', 'description', 'article'
+    'title', 'description'
 ]
 
 
@@ -22,6 +22,8 @@ class ArticleDetailView(DetailView):
 class ArticleCreateView(CreateView):
     form_class = NewArticle
     template_name = 'blog_new.html'
+    success_url = reverse_lazy('blog_list')
+
 
 
 class ArticleUpdateView(UpdateView):

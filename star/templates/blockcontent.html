@@ -1,8 +1,5 @@
-{% extends 'sauna1.html' %}
-{% block title %}saunaOne{% endblock %}
+<!DOCTYPE html>
 {% load static %}
-
-{% block content %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-t\ o-fit=no">
@@ -13,6 +10,27 @@
 
 <body>
 <style>
+    .navbar-brand a {
+    display: inline-block;
+    color: #00bfff; /* Цвет обычной ссылки */
+    line-height: 1.8;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+.navbar-brand a:after {
+    background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.navbar-brand a:hover:after,
+.navbar-brand a:focus:after {
+    width: 100%;
+}
 @keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
@@ -106,12 +124,20 @@ footer {
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+             <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-brand ml-auto mr-auto" style="position: absolute; left: 42%; ">
+                <a class="navbar-brand" href="{% url 'sauna_list' %}" style="font-size: 16px" <strong>Наши залы</strong></a>
+                <a class="navbar-brand" href="{% url 'blog_list' %}" style="font-size: 16px" <strong>Блог</strong></a>
+                <a class="navbar-brand" href="{% url 'booking_list' %}" style="font-size: 16px" <strong>Список броней</strong></a>
+            </div>
         <div class="collapse navbar-collapse"id="navbarCollapse">
             {% if user.is_authenticated %}
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.username }}</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labeledby="userMenu">
+                                <a class="dropdown-item" href="{% url 'edit_user' user.pk %}">Изменить данные о себе</a>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{% url 'password_change' %}">Изменить пароль</a>
                                 <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="{% url 'logout' %}">Выйти</a>
@@ -140,10 +166,10 @@ footer {
     <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
   </div>
 </div>
-
-    <footer>
-      <a href="{% include 'footer.html' %}"></a>
-    </footer>
+    <div class = "container">
+        {% block content %}
+        {% endblock %}
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -155,4 +181,4 @@ footer {
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
-{% endblock %}
+</html>

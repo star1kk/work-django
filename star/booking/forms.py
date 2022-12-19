@@ -3,7 +3,7 @@ from .models import Booking
 from datetime import datetime, timedelta
 from django.contrib.auth.models import User
 
-active_fields = ('sauna', 'entry_date', 'entry_time')
+active_fields = ('sauna', 'entry_date', 'entry_time', 'quantity')
 
 
 class NewBooking(forms.ModelForm):
@@ -41,10 +41,10 @@ class NewBooking(forms.ModelForm):
 class EditBooking(forms.ModelForm):
     class Meta:
         model = Booking
+        fields = active_fields
         widgets = {
             "user": forms.Select(attrs={'class': 'form-control rounded 3'}),
             "sauna": forms.Select(attrs={'class': 'form-control rounded 3'}),
             "entry_date": forms.TextInput(attrs={'class': 'rounded 3', 'type': 'date'}),
             "entry_time": forms.TextInput(attrs={'class': 'rounded 3', 'type': 'time'})
         }
-        fields = active_fields

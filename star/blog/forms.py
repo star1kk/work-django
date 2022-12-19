@@ -2,7 +2,7 @@ from django import forms
 from .models import Article
 
 active_fields = [
-    'title', 'description', 'article'
+    'title', 'description'
 ]
 
 
