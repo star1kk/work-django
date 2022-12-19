@@ -5,6 +5,10 @@ class HomePageView(TemplateView):
     template_name = 'home.html'
 
 
+class RedirectPageView(TemplateView):
+    template_name = 'redirect.html'
+
+
 class AddPageView(TemplateView):
     template_name = 'form.html'
 

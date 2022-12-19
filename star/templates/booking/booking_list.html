@@ -25,7 +25,7 @@
 
                         <a href="{% url 'booking_detail' booking.pk %}" class="btn btn-dark">Перейти</a>
                         <a href="{% url 'booking_edit' booking.pk %}" class="btn btn-dark">Изменить</a>
-                        <a href="{% url 'booking_delete' booking.pk %}" class="btn btn-dark">Удалить</a>
+                        <a href="{% url 'booking_delete' booking.pk %}" class="btn btn-danger">Удалить</a>
                     </div>
                 {% endif %}
             {% endfor %}

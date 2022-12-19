@@ -6,7 +6,7 @@ from .models import Sauna
 
 class SaunaListView(ListView):
     model = Sauna
-    template_name = 'sauna_list.html'
+    template_name = 'home.html'
 
 
 class SaunaDetailView(DetailView):

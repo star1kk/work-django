@@ -17,8 +17,8 @@
                     {% if user.is_superuser %}
                         <p>
                         <p class="navbar-brand">Панель администратора</p>
-                        <a class="btn btn-primary" href="{% url 'blog_edit' blog.pk %}">Редактировать</a>
-                        <a class="btn btn-success" href="{% url 'blog_new' %}">Добавить</a>
+                        <a class="btn btn-dark" href="{% url 'blog_edit' blog.pk %}">Редактировать</a>
+                        <a class="btn btn-dark" href="{% url 'blog_new' %}">Добавить</a>
                         <a class="btn btn-danger" href="{% url 'blog_delete' blog.pk %}">Удалить</a>
                     {% endif %}
             {% endfor %}

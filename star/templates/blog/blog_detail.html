@@ -77,17 +77,12 @@
                     </a>
                 </div>
                 </div>
-                <div class="jumbotron">
-                    <a href="{% url 'appointment_new_params' 0 article.haircut.pk %}"
-                        class="btn btn-success btn-lg"
-                        style="display: block; margin: 0 auto;">Записаться (сделаем за {{ article.haircut.time_execution }} минут)</a>
-                </div>
             </div>
 
             {% if user.is_superuser %}
                 <p>
                 <p class="navbar-brand">Панель администратора</p>
-                <a class="btn btn-primary" href="{% url 'blog_edit' article.pk %}">Отредактировать</a>
+                <a class="btn btn-primary" href="{% url 'blog_edit' article.pk %}">Редактировать</a>
                 <a class="btn btn-danger" href="{% url 'blog_delete' article.pk %}">Удалить</a>
             {% endif %}
       {% endblock content %}
