@@ -8,7 +8,7 @@
 {% extends 'base.html' %}
     {% block content %}
 <div class="row align-items-start" >
-    <div class="col"  style="margin-top: 7%">
+    <div class="col"  style="margin-top: 10%">
         <form method="post">
         {% if user.is_superuser or user == booking.user %}
             <div class="jumbotron" style="border-radius: 1rem;background: rgba(255,255,255,0.2);
@@ -18,15 +18,16 @@
                 <h2>Ваша бронь</h2>
                 <h5>Зал - <a href="{% url 'sauna_detail' booking.sauna.pk %}">{{ booking.sauna }}</a></h5>
                 <h5>Клиент - {{ booking.user.first_name }} {{ booking.user.last_name }}</h5>
-                <h5>Время брони - {{ booking.entry_date }} {{ booking.entry_time }}</h5>
+                <h5>Время бронирования - {{ booking.entry_date }} {{ booking.entry_time }}</h5>
                 <h5>Количество человек: {{ booking.quantity }}</h5>
+                <h5>Количество часов: {{ booking.hours}}</h5>
                 <p>Наша сауна находится по адресу Татищева 47А</p>
 
                 {% if user.is_superuser %}
                     <p></p>
                     <a href="{% url 'booking_list' %}" class="btn btn-dark">Вернуться к списку</a>
                     <a href="{% url 'booking_edit' booking.pk %}" class="btn btn-dark">Изменить</a>
-                    <a href="{% url 'booking_delete' booking.pk %}" class="btn btn-dark">Удалить</a>
+                    <a href="{% url 'booking_delete' booking.pk %}" class="btn btn-danger">Удалить</a>
                 {% endif %}
             </div>
         {% else %}

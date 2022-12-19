@@ -4,24 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="before final">
-      <change afterPath="$PROJECT_DIR$/star/templates/redirect.html" afterDir="false" />
+    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="neploh">
+      <change afterPath="$PROJECT_DIR$/star/booking/migrations/0003_booking_hours_alter_booking_quantity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/7.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_9_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_9_37__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_9_37_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_9_37__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/articles/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/booking/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/booking/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/booking/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/booking/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/booking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/booking/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/star/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/pages/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/pages/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/sauna/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/sauna/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/sauna/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/sauna/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/star/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/star/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/star/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/star/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/article/article_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/article/article_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/article/article_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/article/article_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/article/article_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/blockcontent.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/blog/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/blog/blog_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/blog/blog_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/blog/blog_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/blog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/blog/blog_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/blog/blog_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/blog/blog_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/booking/booking_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/booking/booking_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/booking/booking_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/booking/booking_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/booking/booking_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/booking/booking_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/booking/booking_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/booking/booking_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/booking/booking_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/booking/booking_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/form.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/registration/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/registration/password_change_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/registration/password_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/registration/password_change_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star/templates/sauna/sauna_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/sauna/sauna_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/sauna/sauna_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/sauna/sauna_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/saunaPage/sauna1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/saunaPage/sauna2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/saunaPage/sauna3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +102,6 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/mespy/PycharmProjects/work-django/star/templates/appointments&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
@@ -113,6 +148,8 @@
       <workItem from="1671374832373" duration="1264000" />
       <workItem from="1671376120512" duration="17503000" />
       <workItem from="1671405277100" duration="670000" />
+      <workItem from="1671446090767" duration="1666000" />
+      <workItem from="1671447896206" duration="13770000" />
     </task>
     <task id="LOCAL-00001" summary="yesss">
       <created>1669354134259</created>

@@ -127,8 +127,8 @@ footer {
              <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-brand ml-auto mr-auto" style="position: absolute; left: 42%; ">
                 <a class="navbar-brand" href="{% url 'sauna_list' %}" style="font-size: 16px" <strong>Наши залы</strong></a>
-                <a class="navbar-brand" href="{% url 'blog_list' %}" style="font-size: 16px" <strong>Блог</strong></a>
-                <a class="navbar-brand" href="{% url 'booking_list' %}" style="font-size: 16px" <strong>Список броней</strong></a>
+                <a class="navbar-brand" href="{% url 'blog_list' %}" style="font-size: 16px" <strong>Новости</strong></a>
+                <a class="navbar-brand" href="{% url 'booking_list' %}" style="font-size: 16px" <strong>Список бронирований</strong></a>
             </div>
         <div class="collapse navbar-collapse"id="navbarCollapse">
             {% if user.is_authenticated %}
@@ -199,11 +199,10 @@ footer {
       <div class="row mt-3">
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
+            <i class="fas fa-gem me-3"></i>Пожалуй, лучшая сауна Екатеринбурга
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+              «Блаженство» — сауна с русской парной, турецким хамамом и русской баней расположена в стильном жилом комплексе «Крылов Сити»
           </p>
         </div>
 
@@ -212,43 +211,25 @@ footer {
             Products
           </h6>
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="{% url 'sauna_list' %}" class="text-reset">Наши залы</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="{% url 'blog_list' %}" class="text-reset">Блог</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="{% url 'booking_list' %}" class="text-reset">Список бронирований</a>
           </p>
         </div>
 
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
+
 
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <h6 class="text-uppercase fw-bold mb-4">Контакты</h6>
-          <p><i class="fas fa-home me-3"></i> г. Екатеринбург</p>
+          <p><i class="fas fa-home me-3"></i> г. Екатеринбург </p>
+            <p><i class="fas fa-home me-3"></i> ул. Татищева 47А </p>
           <p>
             <i class="fas fa-envelope me-3"></i>
-            info@example.com
+            blashenstvo@urtt.ru
           </p>
           <p><i class="fas fa-phone me-3"></i> + 7 (343) 467-86-00</p>
         </div>

@@ -9,7 +9,8 @@ class Booking(models.Model):
     sauna = models.ForeignKey("sauna.Sauna", on_delete=models.PROTECT, null=True)
     entry_date = models.DateField(auto_now=False, auto_now_add=False)
     entry_time = models.TextField()
-    quantity = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(8)])
+    quantity = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(10)])
+    hours = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(24)])
 
     def get_absolute_url(self):
         return reverse('booking_detail', args=[str(self.pk)])

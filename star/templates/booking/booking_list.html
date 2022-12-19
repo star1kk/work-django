@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Список броней</title>
+    <title>Список бронирований</title>
 </head>
 <body>
     {% extends 'base.html' %}
         {% block content %}
     <div class="row align-items-start" >
-    <div class="col"  style="margin-top: 7%">
+    <div class="col"  style="margin-top: 7%; margin-bottom: 7%">
         <form method="post">
 
-            <h1 class="display-4 text-center m-4" style="color: darkgrey">Список броней</h1>
+            <h1 class="display-4 text-center m-4" style="color: darkgrey">Список бронирований</h1>
             {% for booking in object_list %}
                 {% if booking.user.pk == user.pk or user.is_superuser %}
                     <div class="jumbotron" style="border-radius: 1rem;background: rgba(255,255,255,0.2);
@@ -22,6 +22,7 @@
                         <h5>Клиент - {{ booking.user.first_name }} {{ booking.user.last_name }}</h5>
                         <h5>Время брони - {{ booking.entry_date }} {{ booking.entry_time }}</h5>
                         <h5>Количество человек: {{ booking.quantity }}</h5>
+                        <h5>Количество часов: {{ booking.hours}}</h5>
 
                         <a href="{% url 'booking_detail' booking.pk %}" class="btn btn-dark">Перейти</a>
                         <a href="{% url 'booking_edit' booking.pk %}" class="btn btn-dark">Изменить</a>

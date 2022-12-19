@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Изменение</title>
+    <title>Редактирование бронирований</title>
 </head>
 <body>
     {% extends 'base.html' %}
@@ -20,6 +20,7 @@
             <p>Зал: {{ form.sauna }}</p>
             <p>Дата: {{ form.entry_date }}  Время: {{ form.entry_time }}</p>
             <p>Количество человек: {{ form.quantity }}</p>
+                <p>Количество часов: {{ form.hours}}</p>
             <p></p>
             <input class="btn btn-dark" type="submit" value="Изменить"/>
         </form>

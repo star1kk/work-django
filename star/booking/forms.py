@@ -3,7 +3,7 @@ from .models import Booking
 from datetime import datetime, timedelta
 from django.contrib.auth.models import User
 
-active_fields = ('sauna', 'entry_date', 'entry_time', 'quantity')
+active_fields = ('sauna', 'entry_date', 'entry_time', 'quantity', 'hours')
 
 
 class NewBooking(forms.ModelForm):

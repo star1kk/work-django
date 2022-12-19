@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'users',
     'pages',
     'crispy_forms',
-    'articles',
     'blog',
     'sauna',
     'booking',

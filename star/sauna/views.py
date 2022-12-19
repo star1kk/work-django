@@ -18,13 +18,13 @@ class SaunaDetailView(DetailView):
 class SaunaCreateView(CreateView):
     model = Sauna
     template_name = 'sauna_new.html'
-    fields = ['user', 'start_time', 'end_time', 'photo1', 'photo2', 'photo3', 'description', 'full_description', 'price', 'quantity']
+    fields = ['photo1', 'photo2', 'photo3', 'description', 'full_description', 'price']
 
 
 class SaunaUpdateView(UpdateView):
     model = Sauna
     template_name = 'sauna_edit.html'
-    fields = ['user', 'start_time', 'end_time', 'photo1', 'photo2', 'photo3', 'description', 'full_description', 'price', 'quantity']
+    fields = ['photo1', 'photo2', 'photo3', 'description', 'full_description', 'price']
 
 
 class SaunaDeleteView(DeleteView):

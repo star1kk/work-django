@@ -6,7 +6,7 @@ from .models import Booking
 from .forms import EditBooking, NewBooking
 
 active_fields = [
-    'user', 'sauna', 'entry_date', 'entry_time', 'quantity'
+    'user', 'sauna', 'entry_date', 'entry_time', 'quantity', 'hours'
 ]
 
 

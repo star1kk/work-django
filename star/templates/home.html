@@ -5,31 +5,25 @@
 {% block content %}
 
 
-  <div class="container">
-    <div class="col"  style="margin-top: 12%">
+    <div class="col"  style="margin-top: 10%; margin-left: 4%">
       <h1 class="display-4" style="color: darkgrey"> Сауна "Блаженство"</h1>
       <p class="lead" style="color: darkgrey"> Сауна с русской парной, турецким хамамом и финской баней.</p>
       <p class="lead">
         {% if user.is_authenticated %}
         <a class="btn btn-light btn-lg" style="background: #eeeeee;
 background: -webkit-radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);
-background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'booking_new' %} " role="button">Забронировать сауну</a>
+background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'booking_new' %} " role="button">Забронировать</a>
         {% else %}
         <a class="btn btn-light btn-lg" style="background: background: #eeeeee;
 background: -webkit-radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);
-background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'login' %}" role="button">Забронировать сауну</a>
+background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'login' %}" role="button">Забронировать</a>
         {% endif %}
       </p>
     </div>
-     <div class="col"  style="margin-top: 10%">
-
-
-
-
-        <h1 class="display-4 text-center m-4" style="color: darkgrey">Ниже вы можете увидеть все наши залы</h1>
+     <div class="col"  style="margin-top: 5%; margin-bottom: 15%">
         <div class="row">
             {% for sauna in object_list %}
-            <div class="card bg-color m-4" style="width:19rem; height: 28rem; background-color: #dae0e5">
+            <div class="card bg-color m-4" style="width:20rem; height: 25rem; background-color: #dae0e5">
                 <div id="carousel123" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         {% if sauna.photo1 != None %}
@@ -59,12 +53,6 @@ background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'lo
                     <p class="card-text">{{ sauna.description }}</p>
                     <p class="card-text">{{ sauna.price }} Р/час</p>
                     <a href="{% url 'sauna_detail' sauna.pk %}" class="btn btn-outline-secondary mb-1">Посмотреть</a>
-
-                    {% if user.is_authenticated %}
-                    <a href="{% url 'booking_new_params' sauna.pk 0 %}" class="btn btn-outline-dark">Забронировать зал</a>
-                    {% else %}
-                    <a href="{% url 'login'  %}" class="btn btn-outline-dark">Забронировать зал</a>
-                    {% endif %}
                 </div>
             </div>
             {% endfor %}
@@ -73,10 +61,12 @@ background: radial-gradient(circle, #eeeeee 0%, #b8b8b8 100%);" href="{% url 'lo
         <p class="navbar-brand " >Панель администратора</p>
         <a class="btn btn-dark" href="{% url 'sauna_new' %}">Добавить</a>
         {% endif %}
-
+         <h3 class="text-center m-4">Мы находимся здесь</h3>
+         <div style="position:relative;overflow:hidden; justify-content: center; display: flex;">
+             <iframe src="https://yandex.ru/map-widget/v1/-/CCUnbCwgcD" width="600" height="400" frameborder="1" allowfullscreen="true" style="position:relative; border-style: solid; border-width: 5px; border-color: darkgrey;"></iframe>
+         </div>
     </div>
 
-  </div>
 
 
 

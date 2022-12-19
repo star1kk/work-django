@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Редактировать зал</title>
 </head>
 <body>
   {% extends 'base.html' %}
@@ -25,7 +25,7 @@
       <form action="" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Обновить"/>
+        <input class="btn btn-dark" type="submit" value="Обновить"/>
       </form>
                                         </div>
                                     </div>
@@ -34,13 +34,6 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </form>
-    </div>
-</div>
     {% endblock content %}
-        </form>
-    </div>
-  </div>
 </body>
 </html>

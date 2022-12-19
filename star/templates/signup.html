@@ -18,10 +18,10 @@
                                                     border: 1px solid rgba(255,255,255,0.1);">
                                     <div class="card-body p-5 text-center" >
                                         <h2 class="fw-bold mb-2 text-uppercase">Регистрация</h2>
-                                        <p class="text-white-50 mb-5">Please enter your login and password!</p>
+                                        <p class="text-white-50 mb-5">Пожалуйста введите имя пользователя, адрес электронной почты, имя, фамилию и пароль!</p>
                                         <div class="form-outline form-white mb-4">
                                             {% csrf_token %}
-                                            {{ form|crispy }}
+                                            {{ form.as_p }}
                                         <button class="btn btn-outline-dark btn-lg px-5" type="submit">Регистрация</button>
                                         </div>
                                     </div>
