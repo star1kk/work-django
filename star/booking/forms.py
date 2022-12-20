@@ -1,18 +1,11 @@
 from django import forms
 from .models import Booking
 from datetime import datetime, timedelta
-from django.contrib.auth.models import User
 
 active_fields = ('sauna', 'entry_date', 'entry_time', 'quantity', 'hours')
 
 
 class NewBooking(forms.ModelForm):
-    #def __init__(self, *args, **kwargs):
-        #super(forms.ModelForm, self).__init__(*args, **kwargs)
-
-        #pk = kwargs.get('pk')
-        #self.initial['user'] = pk
-
     class Meta:
         min_date = datetime.now()
         max_date = datetime.now() + timedelta(days=21)

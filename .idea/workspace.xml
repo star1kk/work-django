@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="finally">
-      <change beforePath="$PROJECT_DIR$/star/pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/pages/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/pages/views.py" afterDir="false" />
+    <list default="true" id="d6f90d3d-c2f7-4f24-aeb6-a96cf2d181a4" name="Changes" comment="ne fact 4to robit">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1ad9ffa6-adc1-4e39-ad76-c04c976d3f7d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/booking/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/booking/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/star/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/sauna/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/star/sauna/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/booking/booking_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/booking/booking_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star/templates/sauna/sauna_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/star/templates/sauna/sauna_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +54,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mespy/PycharmProjects/work-django/star/templates/appointments&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/mespy/PycharmProjects/work-django/star/db.sqlite3",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mespy\PycharmProjects\work-django\star\templates\appointments" />
@@ -98,6 +107,7 @@
       <workItem from="1671405277100" duration="670000" />
       <workItem from="1671446090767" duration="1666000" />
       <workItem from="1671447896206" duration="14333000" />
+      <workItem from="1671479038373" duration="8661000" />
     </task>
     <task id="LOCAL-00001" summary="yesss">
       <created>1669354134259</created>
@@ -169,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671463364044</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ne fact 4to robit">
+      <created>1671479285641</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671479285641</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +214,7 @@
     <MESSAGE value="edit_user" />
     <MESSAGE value="before final" />
     <MESSAGE value="finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="finally" />
+    <MESSAGE value="ne fact 4to robit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ne fact 4to robit" />
   </component>
 </project>

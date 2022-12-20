@@ -18,11 +18,11 @@
                 <h3 class="card-text" style="color: orangered">{{ sauna.price }} Р/час</h3>
                 <p class="lead text-break">{{ sauna.full_description }}</p>
                 {% if user.is_authenticated %}
-                <a href="{% url 'booking_new_params' sauna.pk 0 %}" class="btn btn-dark btn-lg">Забронировать зал</a>
+                <a href="{% url 'booking_new_params' sauna.pk 0 %}" class="btn btn-dark btn-lg">Забронировать</a>
                 {% else %}
                 <a href="{% url 'login' %}"
                    class="btn btn-dark btn-lg"
-                   style="">Забронировать зал</a>
+                   style="">Забронировать</a>
                 {% endif %}
             </div>
             <div id="carouselHaircut" class="carousel slide" data-ride="carousel" style="width:600px; height:600px; margin-top: 10%">
